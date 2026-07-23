@@ -7,7 +7,7 @@ import { TbWorldWww } from "react-icons/tb";
 import { IoPhonePortrait } from "react-icons/io5";
 import * as SiIcons from "react-icons/si";
 import { PORTFOLIO_INFO } from "../../config/portfolioData";
-import type { DateRange, Portfolio } from "../../types/portfolio";
+import type { Portfolio } from "../../types/portfolio";
 
 export const Resume: React.FC<{ className?: string }> = ({
   className = "",
@@ -25,16 +25,6 @@ export const Resume: React.FC<{ className?: string }> = ({
 
   const contact = personal.contact ?? {};
   const meta = resumeInfo.meta ?? {};
-
-  function formatDate(date?: string | DateRange): string {
-    if (!date) return "";
-    if (typeof date === "string") return date;
-
-    const start = date.start ?? "";
-    if (date.present) return `${start} — Present`;
-    if (date.end) return `${start} — ${date.end}`;
-    return start;
-  }
 
   return (
     <article
@@ -189,60 +179,6 @@ export const Resume: React.FC<{ className?: string }> = ({
                     </li>
                   ))}
                 </ul>
-              </div>
-            ))}
-          </div>
-        </section>
-      )}
-
-      {/* Experience */}
-      {resumeInfo.experience && resumeInfo.experience.length > 0 && (
-        <section>
-          <h2 className="text-base font-semibold mt-4">Experience</h2>
-          <div className="space-y-6">
-            {resumeInfo.experience.map((exp, idx) => (
-              <div key={exp.id ?? `${exp.title}-${idx}`} className="text-sm">
-                <div className="flex flex-col sm:flex-row sm:justify-between sm:items-start">
-                  <div>
-                    <div className="font-medium">
-                      {exp.title}
-                      {exp.company ? (
-                        <span className="text-[var(--muted)]">
-                          {" "}
-                          — {exp.company}
-                        </span>
-                      ) : null}
-                    </div>
-                    {exp.location && (
-                      <div className="text-xs text-[var(--muted)]">
-                        {exp.location}
-                      </div>
-                    )}
-                  </div>
-                  <div className="text-[var(--muted)] mt-2 sm:mt-0">
-                    {formatDate(exp?.date)}
-                  </div>
-                </div>
-
-                {exp.summary && (
-                  <p className="mt-2 text-[var(--text)]">{exp.summary}</p>
-                )}
-
-                {exp.bullets && exp.bullets.length > 0 && (
-                  <ul className="list-disc list-inside mt-2">
-                    {exp.bullets.map((b, i) => (
-                      <li key={i} className="text-[var(--text)]">
-                        {b}
-                      </li>
-                    ))}
-                  </ul>
-                )}
-
-                {exp.tech && exp.tech.length > 0 && (
-                  <div className="mt-2 text-xs text-[var(--muted)]">
-                    Tech: {exp.tech.join(", ")}
-                  </div>
-                )}
               </div>
             ))}
           </div>

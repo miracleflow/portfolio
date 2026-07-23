@@ -15,6 +15,8 @@ import { ProjectModal } from "../components/ProjectModal";
 import { ScrollProgressBar } from "../components/shared/ScrollProgressBar";
 import { ScrollToTop } from "../components/shared/ScrollToTop";
 import CLIResume from "../components/CLIResume";
+import { BackgroundBeams } from "../components/BackgroundBeams";
+import CurvedLoop from "../components/CurvedLoop";
 
 const PortfolioPage: React.FC = () => {
   const [selected, setSelected] = useState<Project | null>(null);
@@ -56,17 +58,31 @@ const PortfolioPage: React.FC = () => {
 
       <motion.section
         id="about"
-        className="hero-panel relative h-screen min-h-screen w-full overflow-hidden"
+        className="relative w-full flex items-center justify-center px-4 sm:px-6 lg:px-8 pb-0"
+        style={{ height: "100vh" }}
         initial={{ opacity: 0, y: 8 }}
         animate={showHello ? { opacity: 0, y: 8 } : { opacity: 1, y: 0 }}
         transition={{ duration: 0.6, ease: "easeOut" }}
       >
-        <div className="relative z-10 flex min-h-screen w-full items-center justify-center px-4 sm:px-6 lg:px-8">
-          <div className="w-full max-w-6xl 2xl:max-w-7xl mx-auto">
+        <div className="absolute inset-0 z-0" style={{ height: "140vh" }}>
+          <BackgroundBeams />
+        </div>
+        <div className="relative z-10 w-full max-w-6xl 2xl:max-w-7xl mx-auto py-20 sm:py-24 lg:py-32">
+          <div className="grid items-center">
             <About />
           </div>
         </div>
       </motion.section>
+      <div className="w-full bg-[var(--background)] pt-8 pb-8 relative z-20">
+        <CurvedLoop
+          marqueeText={PORTFOLIO_INFO.personal.headline + " · "}
+          speed={1}
+          className="text-2xl text-[var(--text)] bg-[var(--surface)]"
+          curveAmount={400}
+          direction="left"
+          interactive={true}
+        />
+      </div>
 
       <main className="max-w-6xl 2xl:max-w-9xl mx-auto px-6 py-15 sm:py-20 lg:py-32 relative z-20">
         <section id="projects" className="py-8">
@@ -109,20 +125,11 @@ const PortfolioPage: React.FC = () => {
               <div className="mt-2">
                 <div className="font-semibold">Quick contact</div>
                 <div className="mt-2 text-sm text-gray-500 dark:text-gray-400">
-                  Email: satyasubudhi089@gmail.com
+                  Email: kevinpang8142@gmail.com
                 </div>
                 <div className="text-sm text-gray-500 dark:text-gray-400">
                   Location: Remote
                 </div>
-              </div>
-              <div className="mt-auto">
-                <div className="text-sm font-medium">Resume</div>
-                <a
-                  href="/"
-                  className="block mt-2 px-4 py-2 rounded-lg border border-gray-200 dark:border-gray-700"
-                >
-                  Download PDF
-                </a>
               </div>
             </div>
           </div>

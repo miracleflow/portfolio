@@ -15,7 +15,6 @@ type NavLink = { href: string; label: string };
 
 export const Header: React.FC<{ links?: NavLink[]; onTryCLI?: () => void }> = ({
   links = [],
-  onTryCLI,
 }) => {
   const { dark, toggle } = useTheme();
   const headerRef = useRef<HTMLElement | null>(null);
@@ -110,7 +109,7 @@ export const Header: React.FC<{ links?: NavLink[]; onTryCLI?: () => void }> = ({
         }}
       />
       <div className="relative max-w-6xl mx-auto px-6 py-4 flex items-center justify-end">
-        {/* Right: nav + theme + Try CLI */}
+        {/* Right: nav + theme */}
         <nav aria-label="Primary" className="relative flex items-center gap-3">
           <div className="relative hidden sm:flex gap-4">
             {links.map((l) => {
@@ -140,14 +139,6 @@ export const Header: React.FC<{ links?: NavLink[]; onTryCLI?: () => void }> = ({
               );
             })}
           </div>
-
-          <button
-            onClick={onTryCLI}
-            className="sm:inline-flex items-center gap-2 px-3 py-1.5 rounded text-sm border border-[var(--border)] hover:bg-[var(--border)]/30 transition cursor-pointer"
-            aria-label="Try CLI"
-          >
-            Try CLI
-          </button>
 
           <button
             onClick={toggle}

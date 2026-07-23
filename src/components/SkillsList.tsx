@@ -170,11 +170,8 @@ export const SkillsList: React.FC<{
                             <div className="font-medium text-sm">{s.name}</div>
                             <div className="text-xs text-slate-400 mt-1">
                               {s.years
-                                ? `${s.years} yr${s.years > 1 ? "s" : ""}`
+                                ? `${s.years} year${s.years > 1 ? "s" : ""}`
                                 : null}
-                              {s.note ? (
-                                <span className="ml-2">• {s.note}</span>
-                              ) : null}
                             </div>
                           </div>
 
