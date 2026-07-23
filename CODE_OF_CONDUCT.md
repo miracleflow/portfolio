@@ -60,7 +60,7 @@ representative at an online or offline event.
 
 Instances of abusive, harassing, or otherwise unacceptable behavior may be
 reported to the community leaders responsible for enforcement at
-[satyasubudhi089@gmail.com](mailto:satyasubudhi089@gmail.com).
+[kevinpang8142@gmail.com](mailto:kevinpang8142@gmail.com).
 
 All complaints will be reviewed and investigated promptly and fairly.
 
@@ -139,8 +139,8 @@ For answers to common questions about this code of conduct, see the FAQ at
 If you have questions about this Code of Conduct or need to report an incident,
 please contact:
 
-**Satya Subudhi**  
-📧 Email: satyasubudhi089@gmail.com  
-🐙 GitHub: [@satya00089](https://github.com/satya00089)
+**Kevin Pang**  
+📧 Email: kevinpang8142@gmail.com  
+🐙 GitHub: [@miracleflow](https://github.com/miracleflow)
 
 We are committed to providing a welcoming and inspiring community for all.

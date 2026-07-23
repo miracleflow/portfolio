@@ -17,13 +17,13 @@ It's people like you that make this portfolio template better for everyone. We w
 
 ## Code of Conduct
 
-This project and everyone participating in it is governed by our [Code of Conduct](CODE_OF_CONDUCT.md). By participating, you are expected to uphold this code. Please report unacceptable behavior to [satyasubudhi089@gmail.com](mailto:satyasubudhi089@gmail.com).
+This project and everyone participating in it is governed by our [Code of Conduct](CODE_OF_CONDUCT.md). By participating, you are expected to uphold this code. Please report unacceptable behavior to [kevinpang8142@gmail.com](mailto:kevinpang8142@gmail.com).
 
 ## How Can I Contribute?
 
 ### 🐛 Reporting Bugs
 
-Before creating bug reports, please check the [existing issues](https://github.com/satya00089/portfolio/issues) to avoid duplicates.
+Before creating bug reports, please check the [existing issues](https://github.com/miracleflow/portfolio/issues) to avoid duplicates.
 
 When you create a bug report, include as many details as possible:
 
@@ -63,7 +63,7 @@ If applicable, add screenshots.
 
 ### 💡 Suggesting Enhancements
 
-Enhancement suggestions are tracked as [GitHub issues](https://github.com/satya00089/portfolio/issues).
+Enhancement suggestions are tracked as [GitHub issues](https://github.com/miracleflow/portfolio/issues).
 
 When suggesting an enhancement:
 
@@ -125,7 +125,7 @@ cd portfolio
 3. **Add upstream remote:**
 
 ```bash
-git remote add upstream https://github.com/satya00089/portfolio.git
+git remote add upstream https://github.com/miracleflow/portfolio.git
 ```
 
 4. **Install dependencies:**
@@ -416,9 +416,9 @@ git commit -m "refactor(portfolio): extract project modal logic"
 ### Getting Help
 
 - 📖 Read the [README](README.md) and [Wiki](WIKI.md)
-- 🔍 Search [existing issues](https://github.com/satya00089/portfolio/issues)
-- 💬 Ask questions in [Discussions](https://github.com/satya00089/portfolio/discussions)
-- 📧 Email: [satyasubudhi089@gmail.com](mailto:satyasubudhi089@gmail.com)
+- 🔍 Search [existing issues](https://github.com/miracleflow/portfolio/issues)
+- 💬 Ask questions in [Discussions](https://github.com/miracleflow/portfolio/discussions)
+- 📧 Email: [kevinpang8142@gmail.com](mailto:kevinpang8142@gmail.com)
 
 ### Recognition
 

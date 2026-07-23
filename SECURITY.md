@@ -21,7 +21,7 @@ Please **do not** create a public GitHub issue for security vulnerabilities. Thi
 
 Send a detailed report to:
 
-**Email:** [satyasubudhi089@gmail.com](mailto:satyasubudhi089@gmail.com)
+**Email:** [kevinpang8142@gmail.com](mailto:kevinpang8142@gmail.com)
 
 **Subject:** `[SECURITY] Brief description of the vulnerability`
 
@@ -216,9 +216,9 @@ Contributors who report valid security vulnerabilities will be:
 
 For security concerns, contact:
 
-**Satya Subudhi**  
-📧 Email: [satyasubudhi089@gmail.com](mailto:satyasubudhi089@gmail.com)  
-🐙 GitHub: [@satya00089](https://github.com/satya00089)
+**Kevin Pang**  
+📧 Email: [kevinpang8142@gmail.com](mailto:kevinpang8142@gmail.com)  
+🐙 GitHub: [@miracleflow](https://github.com/miracleflow)
 
 ---
 
